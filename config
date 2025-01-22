@@ -197,15 +197,17 @@ bar {
         inactive_workspace #888888 #222222
         urgent_workspace   #ffffff #900000
     }
+
+    position top
 }
 
 ### MY CUSTOM CONFIGS
-exec --no-startup-id xrandr --output DP-0 --mode 1920x1080 --rate 144.00
+exec --no-startup-id xrandr --output DP-0 --mode 1920x1080 --rate 144.-01
 exec --no-startup-id nitrogen --restore &
 #exec --no-startup-id picom
 exec --no-startup-id cd /home/lambda/Documents/repos/picom/build/src && ./picom
 
-gaps inner 20px
+gaps inner 50px
 gaps outer 29px
 
 default_border pixel 0
