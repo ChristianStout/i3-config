@@ -187,12 +187,13 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
     status_command i3status --config ~/.config/i3/i3status.conf
+    # i3bar_command i3bar --transparency
 
     colors {
         background #000000
         statusline #ffffff
 
-        focused_workspace  #ffffff #285577
+        focused_workspace  #000000 #f8b195
         active_workspace   #ffffff #333333
         inactive_workspace #888888 #222222
         urgent_workspace   #ffffff #900000
@@ -213,6 +214,6 @@ gaps outer 29px
 default_border pixel 0
 
 # Keybinds
-bindsym $mod+b exec firefox-esr
+bindsym $mod+b exec flatpak run app.zen_browser.zen
 bindsym $mod+minus exec border toggle
 
