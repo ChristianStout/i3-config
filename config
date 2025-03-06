@@ -55,7 +55,7 @@ bindsym $mod+Return exec konsole
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+space exec --no-startup-id rofi -show drun
+bindsym $mod+space exec --no-startup-id rofi -i -show drun -modi drun -show-icons
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -209,8 +209,8 @@ exec --no-startup-id nitrogen --restore &
 #exec --no-startup-id picom
 exec --no-startup-id cd /home/lambda/Documents/repos/picom/build/src && ./picom
 
-gaps inner 50px
-gaps outer 29px
+gaps inner 25px
+gaps outer 15px
 
 default_border pixel 0
 
