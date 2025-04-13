@@ -206,7 +206,7 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id ~/.config/i3/polybar.sh
 exec --no-startup-id xrandr --output DP-0 --mode 1920x1080 --rate 144.-01
 exec --no-startup-id nitrogen --restore &
-exec --no-startup-id picom
+exec --no-startup-id picom -b --config ~/.config/i3/picom.conf
 #exec --no-startup-id cd /home/lambda/Documents/repos/picom/build/src && ./picom
 exec --no-startup-id /usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1
 
