@@ -20,12 +20,15 @@ mkdir ~/.config/i3
 cp -r . ~/.config/i3
 ```
 
-Then, make sure there is a symbolic link from the polybar configuration
+Then, make sure there is a symbolic link from the polybar and picom configurations
 to the polybar configuration file.
 
 ```zsh
 mkdir ~/.config/polybar
 ln -s ~/.config/i3/polybar.ini ~/.config/polybar/config.ini
+
+mkdir ~/.config/picom/
+ln -s ~/.config/i3/picom.conf ~/.config/picom/picom.conf
 ```
 
 Make sure to change a few things before use:
