@@ -2,6 +2,12 @@
 
 My current, minimal i3 config.
 
+![image](screenshots/screenshot1.png)
+![image](screenshots/screenshot2.png)
+![image](screenshots/screenshot3.png)
+![image](screenshots/screenshot4.png)
+![image](screenshots/screenshot5.png)
+
 ## ENSURE INSTALLED
  * [`picom`](https://github.com/yshui/picom) - for prettiness
  * [`nitrogen`](https://github.com/nitrogen/nitrogen) - for wallpapers
