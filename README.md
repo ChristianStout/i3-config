@@ -55,7 +55,7 @@ line at the bottom of the `config` file accoringly
 before use.
 
 ### Terminal
-The default terminal is [`ghostty`][https://ghostty.org/]. Either make sure
+The default terminal is [`ghostty`](https://ghostty.org/). Either make sure
 it is installed, or change it to your liking.
 
 ### Compositor
