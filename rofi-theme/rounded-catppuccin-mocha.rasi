@@ -1,0 +1,17 @@
+/* ROUNDED THEME FOR ROFI */
+/* Author: Newman Sanchez (https://github.com/newmanls) */
+/* Colors modified by Christian Stout (https://github.com/christianstout) */
+/* Colors by catppuccin (https://catppuccin.com/palette/) */
+
+* {
+    bg0:    #11111bF2;
+    bg1:    #181825;
+    bg2:    #1e1e2e80;
+    bg3:    #74c7ecF2;
+    fg0:    #cdd6f4;
+    fg1:    #fdd6f4;
+    fg2:    #585b70;
+    fg3:    #313244;
+}
+
+@import "rounded-common.rasi"
