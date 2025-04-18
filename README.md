@@ -34,6 +34,18 @@ mkdir ~/.config/polybar
 ln -s ~/.config/i3/polybar.ini ~/.config/polybar/config.ini
 ```
 
+**Optionally**, you can add a symbolic link to the ghostty configuration.
+If you already have a config, and would like to try mine, run:
+```zsh
+mv ~/.config/ghostty/config ~/.config/ghostty/config.bak
+ln -s ~/.config/i3/ghostty.conf ~/.config/ghostty/config
+```
+Or if you don't have a config, or just want to use mine:
+```zsh
+rm -rf ~/.config/ghostty/ && mkdir ~/.config/ghostty
+ln -s ~/.config/i3/ghostty.config ~/.config/ghostty/config
+```
+
 Make sure to change a few things before use:
 
 ### Monitor
@@ -43,7 +55,7 @@ line at the bottom of the `config` file accoringly
 before use.
 
 ### Terminal
-The default terminal is `konsole`. Either make sure
+The default terminal is [`ghostty`][https://ghostty.org/]. Either make sure
 it is installed, or change it to your liking.
 
 ### Compositor
