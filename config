@@ -75,10 +75,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -204,14 +204,25 @@ bindsym $mod+r mode "resize"
 
 ### MY CUSTOM CONFIGS
 exec_always --no-startup-id ~/.config/i3/polybar.sh
-exec --no-startup-id xrandr --output DP-0 --mode 1920x1080 --rate 144.-01
+exec --no-startup-id xrandr --output DP-0 --mode 1920x1080 --rate 144.01
+#exec --no-startup-id xrandr --output HDMI-0 --mode 1920x1080 --rate 144.01
 exec --no-startup-id nitrogen --restore &
-exec --no-startup-id picom -b --config ~/.config/i3/picom.conf
-#exec --no-startup-id cd /home/lambda/Documents/repos/picom/build/src && ./picom
-exec --no-startup-id /usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1
+# exec --no-startup-id picom -b --config ~/.config/i3/picom.conf
+exec --no-startup-id /usr/local/bin/picom -b --config ~/.config/i3/picom.conf
+# exec --no-startup-id cd /home/lambda/Documents/repos/picom/build/src && ./picom
+# exec --no-startup-id /usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+
+#exec --no-startup-id xrandr --output DP-0 --primary --mode 1920x1080 --rate 144.01 --pos 0x0 --rotate normal --output HDMI-0 --mode 1920x1080 --rate 60.00 --pos 1920x0 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --off --output DP-5 --off
+
+# workspace 11 output HDMI-0
 
 gaps inner 25px
-gaps outer 15px
+gaps bottom 10px
+gaps left 10px
+gaps right 10px
+# gaps outer 15px
+# gaps top 10px
 
 default_border pixel 0
 
