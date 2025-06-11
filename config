@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -87,7 +87,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+Mod1+v split h
+bindsym $mod+Mod4+v split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -213,6 +213,9 @@ exec --no-startup-id /usr/local/bin/picom -b --config ~/.config/i3/picom.conf
 # exec --no-startup-id /usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 
+# Set capslock to escape - If you don't like this, modify or comment the line
+exec --no-startup-id setxkbmap -option "caps:escape"
+
 #exec --no-startup-id xrandr --output DP-0 --primary --mode 1920x1080 --rate 144.01 --pos 0x0 --rotate normal --output HDMI-0 --mode 1920x1080 --rate 60.00 --pos 1920x0 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --off --output DP-5 --off
 
 # workspace 11 output HDMI-0
@@ -229,4 +232,5 @@ default_border pixel 0
 # Keybinds
 bindsym $mod+b exec flatpak run app.zen_browser.zen
 bindsym $mod+minus exec border toggle
+bindsym $mod+g exec cd ~/Applications/Godot_v4.4.1-stable_mono_linux_x86_64 && zsh | ./Godot_v4.4.1-stable_mono_linux.x86_64
 
