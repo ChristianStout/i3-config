@@ -23,7 +23,7 @@ My current, minimal i3 config.
 Clone this repository into `~/.config/i3/`.
 
 ```zsh
-rm -r /.config/i3 # BE CAREFUL! BACKUP FIRST!!!
+rm -r ~/.config/i3 # BE CAREFUL! BACKUP FIRST!!!
 git clone https://github.com/ChristianStout/i3-config.git ~/.config/i3
 ```
 
