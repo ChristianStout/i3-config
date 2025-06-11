@@ -103,13 +103,20 @@ Or you can change to your favorite browser ;)
 ## Use
 
 ### Custom Keybindings
- * `SUPER+ENTER` -> Launch `ghostty`
- * `SUPER+b` -> Launch `zen`
- * `SUPER+q` -> Close window
- * `SUPER+h` -> Move focus left
- * `SUPER+j` -> Move focus down
- * `SUPER+k` -> Move focus up
- * `SUPER+l` -> Move focus right
+ * `ALT+ENTER` -> Launch `ghostty`
+ * `ALT+b` -> Launch `zen`
+ * `ALT+q` -> Close window
+ * `ALT+h` -> Move focus left
+ * `ALT+j` -> Move focus down
+ * `ALT+k` -> Move focus up
+ * `ALT+l` -> Move focus right
+ * `ALT+SHIFT+h` -> Move window left
+ * `ALT+SHIFT+j` -> Move window down
+ * `ALT+SHIFT+k` -> Move window up
+ * `ALT+SHIFT+l` -> Move window right
+
+If the Flatpak version of the Godot game engine is installed:
+ * `ALT+g` -> Launch `godot`
 
 Hope you enjoy it as much as I do :)
 
